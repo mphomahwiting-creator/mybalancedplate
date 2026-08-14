@@ -28,6 +28,12 @@ The development of the website will be completed within 10 weeks, with a dedicat
 The business aims to generate at least 10 qualified enquiries within the next 3 months, with the goal of introducing initial sales and paid meal-preparation guidance as part of its 24-month development roadmap.
 
 
+
+
+
+
+
+
 Source: (New Perspective Design, 2023)
 Key Features and Functionality
 
@@ -50,6 +56,12 @@ Responsive Design – Ensures the website works effectively on desktops, tablets
 Clear Navigation – Provides a simple navigation structure allowing users to easily move between meals, information and contact sections.
 
 Call-to-Action Buttons – Encourages users to enquire, learn more or express interest in available meals.
+
+
+
+
+
+
 
 
 Project Timeline
