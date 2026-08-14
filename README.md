@@ -28,6 +28,7 @@ The development of the website will be completed within 10 weeks, with a dedicat
 The business aims to generate at least 10 qualified enquiries within the next 3 months, with the goal of introducing initial sales and paid meal-preparation guidance as part of its 24-month development roadmap.
 
 
+Source: (New Perspective Design, 2023)
 Key Features and Functionality
 
 Home Page – Introduces My Balanced Plate, its purpose and approach to balanced meals.
@@ -40,11 +41,12 @@ External Resource Links – Provides links to supporting resources such as Journ
 Responsive Design – Ensures the website works effectively on desktops, tablets and mobile devices.
 Clear Navigation – Provides a simple navigation structure allowing users to easily move between meals, information and contact sections.
 Call-to-Action Buttons – Encourages users to enquire, learn more or express interest in available meals.
-Project Timeline
 
+
+Project Timeline
 Source: (New Perspective Design, 2023)
 
-Week	Stage	Deliverables
+
 Week 1	Requirements and Research	Final requirements, content inventory, target audience and competitor inventory.
 Week 2	Information Architecture	Site map, content organisation and navigation structure.
 Week 3	Wireframes	Low-fidelity wireframes for the home page, meal details and preparation guidance.
