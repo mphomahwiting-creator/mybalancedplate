@@ -1,9 +1,9 @@
-My Balanced Plate
+#My Balanced Plate
 
-Prepared by: Mpho Mahwiting
-Student number: ST10502349
+**Prepared by:** Mpho Mahwiting
+**Student number:** ST10502349
 
-Project Overview
+#Project Overview
 
 My Balanced Plate is a developing food and meal-preparation concept focused on providing practical, balanced meals that customers can realistically prepare and enjoy at home. The project involves developing a professional website that presents the business, showcases its meals, provides clear and understandable meal information, and allows potential customers to make enquiries or express interest in the available offerings.
 
@@ -12,14 +12,14 @@ The website will serve as both an academic project and the foundation for the lo
 The project will ultimately provide My Balanced Plate with a professional online identity while creating a platform that can support customer engagement, initial sales and the future expansion of meal-preparation and nutritional guidance services.
 
 
-Goals
+##Goals
 
 The website will create a professional online presence by showcasing original photographs of meals, ingredients and clear nutritional information. With the help of the Journable AI calorie counter application, the website will provide estimated calorie and portion information for each food item.
 
 The website will also generate customer enquiries, provide meal-preparation guidance and support online ordering at a later stage.
 
 
-Objectives
+##Objectives
 
 The website will serve as a marketing and information platform, supporting the planned growth of the business over 24 months towards prepared meals, paid meal guidance and online ordering.
 
@@ -34,8 +34,8 @@ The business aims to generate at least 10 qualified enquiries within the next 3 
 
 
 
-Source: (New Perspective Design, 2023)
-Key Features and Functionality
+#Key Features and Functionality
+##Source: (New Perspective Design, 2023)
 
 Home Page – Introduces My Balanced Plate, its purpose and approach to balanced meals.
 
@@ -64,8 +64,8 @@ Call-to-Action Buttons – Encourages users to enquire, learn more or express in
 
 
 
-Project Timeline
-Source: (New Perspective Design, 2023)
+#Project Timeline
+##Source: (New Perspective Design, 2023)
 
 
 Week 1	Requirements and Research	Final requirements, content inventory, target audience and competitor inventory.
