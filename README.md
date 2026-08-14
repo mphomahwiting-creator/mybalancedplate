@@ -32,14 +32,23 @@ Source: (New Perspective Design, 2023)
 Key Features and Functionality
 
 Home Page – Introduces My Balanced Plate, its purpose and approach to balanced meals.
+
 Meal Showcase – Displays available meals with photographs, descriptions and relevant nutritional information.
+
 Nutritional Information – Provides estimated calories, macronutrients and portion information for meals.
+
 Meal Preparation Guidance – Gives customers practical information on meal combinations, preparation and portioning.
+
 About Us – Explains the concept, values and purpose of My Balanced Plate.
+
 Enquiry/Contact Functionality – Allows potential customers to submit enquiries or express interest in meals and services.
-External Resource Links – Provides links to supporting resources such as Journable where appropriate.
+
+External Resource Links – Provides links to supporting resources such as Journable.
+
 Responsive Design – Ensures the website works effectively on desktops, tablets and mobile devices.
+
 Clear Navigation – Provides a simple navigation structure allowing users to easily move between meals, information and contact sections.
+
 Call-to-Action Buttons – Encourages users to enquire, learn more or express interest in available meals.
 
 
@@ -48,12 +57,21 @@ Source: (New Perspective Design, 2023)
 
 
 Week 1	Requirements and Research	Final requirements, content inventory, target audience and competitor inventory.
+
 Week 2	Information Architecture	Site map, content organisation and navigation structure.
+
 Week 3	Wireframes	Low-fidelity wireframes for the home page, meal details and preparation guidance.
+
 Week 4	Brand and Visual Design	Colours, typography, photography guidelines and the overall design system.
+
 Week 5	HTML/CSS Development	Responsive page structure, semantic HTML and core CSS styling.
+
 Week 6	JavaScript and Functionality	Meal filters, navigation, enquiry forms and other interactive website elements.
+
 Week 7	Content Integration	Original meal images, meal descriptions, ingredients, Journable-supported meal analysis, business information and calls to action.
+
 Week 8	Testing	Accessibility, responsiveness, usability and cross-browser testing.
-Week 9	Corrections and Optimisation	Fix bugs, correct content where required, improve performance and make final design adjustments.
+
+Week 9	Corrections and Optimisation, Fix bugs, correct content where required, improve performance and make final design adjustments.
+
 Week 10	Launch Preparation	Final quality assurance, documentation and project presentation.
