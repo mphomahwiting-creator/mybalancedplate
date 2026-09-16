@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# mybalancedplate
-
-=======
 My Balanced Plate
 
 Prepared by: Mpho Mahwiting
@@ -47,4 +43,3 @@ Source: (New Perspective Design, 2023)
 
 
 Week 1	Requirements and Research Final requirements, content inventory, target audience and competitor inventory. Week 2 Information Architecture Site map, content organisation and navigation structure. Week 3 Wireframes Low-fidelity wireframes for the home page, meal details and preparation guidance. Week 4 Brand and Visual Design Colours, typography, photography guidelines and the overall design system. Week 5 HTML/CSS Development Responsive page structure, semantic HTML and core CSS styling. Week 6	JavaScript and Functionality Meal filters, navigation, enquiry forms and other interactive website elements. Week 7	Content Integration	Original meal images, meal descriptions, ingredients, Journable-supported meal analysis, business information and calls to action. Week 8	Testing	Accessibility, responsiveness, usability and cross-browser testing. Week 9	Corrections and Optimisation, Fix bugs, correct content where required, improve performance and make final design adjustments. Week 10	Launch Preparation	Final quality assurance, documentation and project presentation.
->>>>>>> dcb09f1305ffbacf87349244d60ed005a01a49f1
