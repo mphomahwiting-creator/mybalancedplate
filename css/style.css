@@ -1,6 +1,6 @@
-/* =========================
+/* ========================================
    CSS RESET
-   ========================= */
+   ======================================== */
 
 * {
     margin: 0;
@@ -9,9 +9,9 @@
 }
 
 
-/* =========================
+/* ========================================
    BASE STYLES
-   ========================= */
+   ======================================== */
 
 html {
     font-size: 100%;
@@ -23,58 +23,308 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: green;
-    background-color: lightgoldenrodyellow;
+    background-color: lemonchiffon;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
 p {
     margin-bottom: 1rem;
 }
 
 
-/* =========================
-   HEADINGS
-   ========================= */
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
 
 .site-header {
-    background-color: lightpink;
-    border-bottom: 1px solid; #dce4d8;
-    box-shadow: 0 2px 8px rgba(red, green, blue, alpha)
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce4d8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-h1,
-h2,
-h3 {
-    line-height: 1.2;
+
+.navigation {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: #285943;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Navigation pseudo-classes */
+
+.navigation a:hover {
+    background-color: #285943;
+    color: #ffffff;
+}
+
+.navigation a:focus {
+    outline: 3px solid #b8d8bd;
+    outline-offset: 2px;
+}
+
+.navigation a:active {
+    background-color: #173b2b;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #637067;
+    font-style: italic;
+}
+
+
+/* ========================================
+   HERO TYPOGRAPHY
+   ======================================== */
+
+.intro-text {
+    color: #4d7a5b;
+    font-size: 0.9rem;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
 }
 
-h1 {
-    font-size: 2.5rem;
+.hero-content h1 {
+    color: #285943;
+    font-size: 3rem;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
 }
 
-h2 {
+.hero-content p {
+    max-width: 38rem;
+    color: #4a554e;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   CALL TO ACTION BUTTON
+   ======================================== */
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.85rem 1.5rem;
+
+    background-color: #285943;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #173b2b;
+    transform: translateY(-2px);
+}
+
+.cta-button:focus {
+    outline: 3px solid #b8d8bd;
+    outline-offset: 3px;
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   FEATURE CARDS
+   ======================================== */
+
+.features {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border: 1px solid #dce4d8;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
     font-size: 2rem;
+    margin-bottom: 0.75rem;
 }
 
-h3 {
+.feature-card h2 {
+    color: #285943;
     font-size: 1.4rem;
+    margin-bottom: 0.75rem;
 }
 
-p {
-    margin-bottom: 1rem;
+.feature-card p {
+    color: #59645d;
 }
 
 
-/* =========================
-   IMAGES
-   ========================= */
+/* ========================================
+   FOOTER
+   ======================================== */
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.site-footer {
+    background-color: #285943;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 55rem) {
+
+    .navigation {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-content {
+        order: 2;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        height: 28rem;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 40rem) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 1rem;
+    }
+
+    .navigation a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        height: 20rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem 3rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
 }
