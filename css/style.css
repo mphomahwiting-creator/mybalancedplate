@@ -890,4 +890,170 @@ main.container {
     margin-bottom: 0;
 }
 
+/* ========================================
+   VALUE PROPOSITION
+   ======================================== */
+
+.value-section {
+    background-color: #fff8dc;
+
+    border-top: 5px solid #d6a928;
+}
+
+.value-section .about-section-text {
+    max-width: 52rem;
+}
+
+.value-section .about-label {
+    margin-bottom: 0.5rem;
+}
+
+.value-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   TAGLINE
+   ======================================== */
+
+.tagline {
+    display: inline-block;
+
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.2rem;
+
+    background-color: #285943;
+    color: #ffffff;
+
+    border-radius: 0.5rem;
+
+    font-weight: 700;
+}
+
+/* ========================================
+   HOW WE DO IT
+   ======================================== */
+
+.how-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 3rem;
+
+    align-items: center;
+
+    border-top: 5px solid #4d7a5b;
+}
+
+.how-header h3 {
+    color: #4d7a5b;
+
+    font-size: 1.3rem;
+
+    margin-top: 0.5rem;
+}
+
+.how-content {
+    padding: 1.5rem;
+
+    background-color: #f4f7f2;
+
+    border-radius: 0.75rem;
+}
+
+.how-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   ABOUT US - TABLET
+   ======================================== */
+
+@media (max-width: 55rem) {
+
+    .about-container {
+        padding: 0 1.5rem 3rem;
+    }
+
+    .about-intro {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .vision-section {
+        grid-template-columns: 1fr;
+    }
+
+    .how-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+
+/* ========================================
+   ABOUT US - MOBILE
+   ======================================== */
+
+@media (max-width: 40rem) {
+
+    .about-container {
+        padding: 0 1rem 2rem;
+    }
+
+    .about-intro {
+        margin: 1rem auto 2rem;
+
+        padding: 2.5rem 1.25rem;
+
+        border-left-width: 4px;
+    }
+
+    .about-intro h1 {
+        font-size: 2rem;
+    }
+
+    .about-intro > p:last-child {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+
+        margin-bottom: 1.5rem;
+
+        border-radius: 0.75rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about-highlight {
+        padding: 1.25rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .tagline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .how-content {
+        padding: 1.25rem;
+    }
+}
+
 
