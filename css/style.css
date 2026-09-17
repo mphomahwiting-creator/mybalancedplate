@@ -1071,4 +1071,145 @@ footer p {
     font-weight: 500;
 }
 
+/* Featured Meals Page */
+
+.page-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto 40px;
+    padding: 0 20px;
+}
+
+.page-header h1 {
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.meals-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.meal-card {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 45px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+
+.meal-card h2 {
+    margin-bottom: 10px;
+}
+
+
+.meal-card h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.meal-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+.meal-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+
+.journable-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+.health-analysis {
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding: 25px;
+    text-align: left;
+    background-color: #f5f5dc;
+    border-radius: 15px;
+}
+
+
+.health-analysis h3 {
+    text-align: center;
+}
+
+
+.health-analysis p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.nutrition-note {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.coming-soon {
+    text-align: center;
+    margin: 50px auto;
+    padding: 35px;
+    max-width: 850px;
+    background-color: #285f49;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.coming-soon h2 {
+    margin-bottom: 15px;
+}
+
+
+.coming-soon p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #285f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 0 0 25px 25px;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 
