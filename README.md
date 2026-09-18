@@ -34,9 +34,14 @@ Source: (New Perspective Design, 2023)
 The Home Page Introduces My Balanced Plate, its purpose and approach to balanced meals.The meal Showcase page Displays available meals with photographs, descriptions and relevant nutritional information. The nutritional Information page Provides estimated calories, macronutrients and portion information for meals. The meal Preparation Guidance page Gives customers practical information on meal combinations, preparation and portioning.The about Us page explains the concept, values and purpose of My Balanced Plate.The enquiry/Contact Functionality llows potential customers to submit enquiries or express interest in meals and services.The external Resource Links Provides links to supporting resources such as Journable.The responsive Design Ensures the website works effectively on desktops, tablets and mobile devices.The clear Navigation Provides a simple navigation structure allowing users to easily move between meals, information and contact sections.The call-to-Action Buttons Encourages users to enquire, learn more or express interest in available meals.
 
 
+
+
 Design and styling (geeksforgeeks,2026)
 My Balanced Plate website uses a consistent visual design across all pages to create a easy-to-use and professional experience fro customers. The CSS styling has been developed to improve the overall page structures, organisation and readability while maintaining consistent colors, typography, navigation,content spacing and image presentation. Structured meal cards are used to present the meal information clearly, while the responsive layouts ensure that the website remains visually organised and accessible on both mobile devices and  desktops. The overall design aims to communicate a clean, practical and approachable food-related brand while presenting information in an understandable and simple way.
 
+
+Development and improvements (geeksforgeeks,2026)
+Multiple improvements were made during the development of the website based on feedback from part 1 of the project. These improvements included correcting the website file names by removing spaces and updating the navigation links to match the corrected file names, creating and linking an external CSS stylesheet, and improving the overall appearance and consistency of the website. The Featured Meals page was enhanced with structured meal cards and health analysis, while the colors, typography,spacing and responsive styling were improved across different pages. Additional improvements were made to the About Us, Contact Us and Meal Preparation Guidance pages to provide better complete and organised content. These changes have helped create a more professional, consistent and responsive website across all sections of My Balanced Plate's website. 
 
 
 
