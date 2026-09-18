@@ -1391,3 +1391,155 @@ margin: 8px 0;
 
 }
 
+/* =========================================
+CONTACT US PAGE
+========================================= */
+
+.contact-page {
+max-width: 1200px;
+margin: 0 auto;
+padding: 50px 30px;
+}
+
+/* Introduction */
+
+.contact-intro {
+text-align: center;
+max-width: 800px;
+margin: 0 auto 50px;
+}
+
+.contact-intro h1 {
+margin-bottom: 15px;
+}
+
+.contact-intro h3 {
+margin-bottom: 20px;
+}
+
+.contact-intro p {
+line-height: 1.8;
+}
+
+/* Contact information + form */
+
+.contact-container {
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+gap: 35px;
+align-items: start;
+}
+
+/* Contact information card */
+
+.contact-information {
+padding: 35px;
+border-radius: 12px;
+background-color: #f4f7f2;
+}
+
+.contact-information h2 {
+margin-bottom: 30px;
+}
+
+.contact-item {
+margin-bottom: 25px;
+}
+
+.contact-item h3 {
+margin-bottom: 8px;
+}
+
+.contact-item p {
+margin: 0;
+line-height: 1.6;
+}
+
+/* Contact form card */
+
+.contact-form-section {
+padding: 35px;
+background-color: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.contact-form-section h2 {
+margin-bottom: 30px;
+}
+
+/* Form */
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #cccccc;
+border-radius: 6px;
+font-family: inherit;
+font-size: 15px;
+box-sizing: border-box;
+}
+
+.form-group textarea {
+resize: vertical;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+outline: none;
+border-color: #6b8e23;
+}
+
+/* Submit button */
+
+.contact-form-section button {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.contact-form-section button {
+opacity: 0.9;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 768px) {
+
+.contact-page {
+    padding: 35px 20px;
+}
+
+.contact-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.contact-information,
+.contact-form-section {
+    padding: 25px;
+}
+
+.contact-intro h1 {
+    font-size: 30px;
+}
+
+}
+
