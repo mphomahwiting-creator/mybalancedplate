@@ -1212,4 +1212,21 @@ footer p {
     font-weight: 600;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 10px;
+    background-color: white;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2f5d50;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
