@@ -1592,3 +1592,11 @@ margin: 0;
 }
 
 }
+
+/* Highlight the current page in the navigation */
+.navigation a.active,
+nav a.active {
+    background-color: #285943;
+    color: #ffffff;
+    border-bottom: 2px solid #d6a928;
+}
