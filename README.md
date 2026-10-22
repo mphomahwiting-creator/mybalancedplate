@@ -56,3 +56,5 @@ Changelog
 
 JavaScript initialisation test
 Added a DOMContentLoaded event listener to ensure that the HTML document is loaded before the JavaScript executes. Also included a console message to verify that the JavaScript file is linked corrently to the My Balanced Plate website.
+
+Updated the activation navigation syling by increasing the gold bottom border of the active navigation link to improve visibility.
