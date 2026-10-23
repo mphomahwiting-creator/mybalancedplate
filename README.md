@@ -58,3 +58,6 @@ JavaScript initialisation test
 Added a DOMContentLoaded event listener to ensure that the HTML document is loaded before the JavaScript executes. Also included a console message to verify that the JavaScript file is linked corrently to the My Balanced Plate website.
 
 Updated the activation navigation syling by increasing the gold bottom border of the active navigation link to improve visibility.
+
+Contact form validation
+Added the JavaScript validation to the Contact Us form to check required fields, email formats, and contact number digits. Added feedback messages to guide users when completing the form and prevent submission when the required fields or contact details are invalid.
