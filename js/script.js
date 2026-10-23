@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (contactForm && formFeedback) {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
+    
 
             // Remove unnecessary spaces
             document.getElementById("name").value =
@@ -26,6 +27,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.getElementById("message").value =
                 document.getElementById("message").value.trim();
+            // Validate the contact number
+const phoneInput = document.getElementById("phone");
+const phoneValue = phoneInput.value.trim();
+const phoneDigits = phoneValue.replace(/\D/g, "");
+
+const validLocalNumber =
+    phoneDigits.length === 10 && phoneDigits.startsWith("0");
+
+const validInternationalNumber =
+    phoneValue.startsWith("+27") &&
+    phoneDigits.length === 11 &&
+    phoneDigits.startsWith("27");
+
+if (
+    phoneValue !== "" &&
+    !validLocalNumber &&
+    !validInternationalNumber
+) {
+    phoneInput.setCustomValidity(
+        "Please enter a valid South African phone number with 10 digits, or use the +27 country code."
+    );
+} else {
+    phoneInput.setCustomValidity("");
+}
 
             // Check the form fields
             if (!contactForm.checkValidity()) {
