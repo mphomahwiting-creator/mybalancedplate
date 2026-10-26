@@ -1613,7 +1613,7 @@ main img {
     position: fixed;
     z-index: 9999;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(40, 89, 67, 0.92);
     justify-content: center;
     align-items: center;
     padding: 20px;
