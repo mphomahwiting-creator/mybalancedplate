@@ -35,10 +35,33 @@
 
 
 <main class="meals-container">
+        <!-- Meal Search and Filtering -->
+    <div class="meal-search">
+        <label for="mealSearch">Search for a meal</label>
+        <input
+            type="search"
+            id="mealSearch"
+            placeholder="Search meals by name or ingredient..."
+        >
+
+        <label for="mealType">Filter by meal type</label>
+        <select id="mealType">
+            <option value="all">All Meals</option>
+            <option value="chicken">Chicken</option>
+            <option value="steak">Steak</option>
+            <option value="beef">Beef</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select>
+
+        <p id="mealSearchFeedback" role="status" aria-live="polite"></p>
+    </div>
+
+
+
 
       <!-- MEAL 1 -->
 
-    <section class="meal-card">
+    <section class="meal-card" data-category="steak">
 
         <h2>Meal 1</h2>
 
@@ -98,7 +121,7 @@
 
     <!-- MEAL 2 -->
 
-    <section class="meal-card">
+    <section class="meal-card" data-category="chicken">
 
         <h2>Meal 2</h2>
 
@@ -163,7 +186,7 @@
 
     <!-- MEAL 3 -->
 
-    <section class="meal-card">
+    <section class="meal-card" data-category="vegetarian">
 
         <h2>Meal 3</h2>
 
@@ -227,7 +250,7 @@
 
     <!-- MEAL 4 -->
 
-    <section class="meal-card">
+   <section class="meal-card" data-category="beef">
 
         <h2>Meal 4</h2>
 
