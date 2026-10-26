@@ -153,6 +153,15 @@ if (
                 }
             });
 
+            const mealsContainer = document.querySelector(".meals-container");
+
+if (mealsContainer) {
+    mealsContainer.classList.toggle(
+        "single-result",
+        visibleMeals === 1
+    );
+}
+
             if (visibleMeals === 0) {
                 mealSearchFeedback.textContent =
                     "No meals found. Try another search or filter.";

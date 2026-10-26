@@ -1638,3 +1638,53 @@ main img {
     font-size: 36px;
     cursor: pointer;
 }
+
+/* Featured Meals layout */
+.meals-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+/* Centre the search and filter at the top */
+.meal-search {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Keep the coming-soon section across the full width */
+.meals-container .coming-soon {
+    grid-column: 1 / -1;
+}
+
+/* Centre one matching meal */
+.meals-container.single-result {
+    grid-template-columns: 1fr;
+}
+
+.meals-container.single-result .meal-card {
+    width: 100%;
+    max-width: 650px;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+/* Display one meal per row on smaller screens */
+@media (max-width: 768px) {
+    .meals-container {
+        grid-template-columns: 1fr;
+    }
+
+    .meals-container .meal-search,
+    .meals-container .coming-soon {
+        grid-column: 1;
+    }
+
+    .meals-container.single-result .meal-card {
+        max-width: 100%;
+    }
+}
