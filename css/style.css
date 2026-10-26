@@ -1600,3 +1600,41 @@ nav a.active {
     color: #ffffff;
     border-bottom: 6px solid #d6a928;
 }
+
+
+/* Make meal images clickable */
+main img {
+    cursor: zoom-in;
+}
+
+/* Image gallery background */
+.image-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Display the enlarged image */
+.image-lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Close button */
+.image-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
