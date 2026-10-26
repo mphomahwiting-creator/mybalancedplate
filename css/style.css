@@ -1688,3 +1688,47 @@ main img {
         max-width: 100%;
     }
 }
+
+/* Page element entrance animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gently reveal page headings and content */
+.page-header,
+main > * {
+    animation: fadeUp 0.7s ease both;
+}
+
+/* Stagger the meal cards slightly */
+.meals-container > .meal-card:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.meals-container > .meal-card:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+.meals-container > .meal-card:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.meals-container > .meal-card:nth-of-type(5) {
+    animation-delay: 0.4s;
+}
+
+/* Respect reduced-motion accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+    .page-header,
+    main > * {
+        animation: none;
+    }
+}
