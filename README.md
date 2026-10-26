@@ -61,3 +61,6 @@ Updated the activation navigation syling by increasing the gold bottom border of
 
 Contact form validation
 Added the JavaScript validation to the Contact Us form to check required fields, email formats, and contact number digits. Added feedback messages to guide users when completing the form and prevent submission when the required fields or contact details are invalid.
+
+Interactive image gallery
+Added the JavaScript image gallery to allow users to click images within the main content of the Home, Why My Balanced Plate, Featured Meals and Meal Preparation Guidance pages to view enlarged versions. To improve usability a close button, background-click functionality and an escape-key support were added. 
