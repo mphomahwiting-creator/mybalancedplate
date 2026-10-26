@@ -65,4 +65,60 @@ if (
                 "Validation successful! Your form is ready to submit.";
         });
     }
+
+        // Interactive image gallery
+    const galleryImages = document.querySelectorAll("main img");
+
+    // Create the image viewer
+    const lightbox = document.createElement("div");
+    lightbox.className = "image-lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("aria-label", "Enlarged image viewer");
+
+    const enlargedImage = document.createElement("img");
+    enlargedImage.alt = "";
+
+    const closeButton = document.createElement("button");
+    closeButton.className = "image-lightbox-close";
+    closeButton.type = "button";
+    closeButton.innerHTML = "&times;";
+    closeButton.setAttribute("aria-label", "Close enlarged image");
+
+    lightbox.appendChild(enlargedImage);
+    lightbox.appendChild(closeButton);
+    document.body.appendChild(lightbox);
+
+    // Open an image when clicked
+    galleryImages.forEach(function (image) {
+        image.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            enlargedImage.src = image.src;
+            enlargedImage.alt = image.alt || "Enlarged meal image";
+            lightbox.style.display = "flex";
+            closeButton.focus();
+        });
+    });
+
+    // Close the image viewer
+    function closeLightbox() {
+        lightbox.style.display = "none";
+        enlargedImage.src = "";
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close using the Escape key
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+    });
 });
