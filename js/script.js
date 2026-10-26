@@ -121,4 +121,51 @@ if (
             closeLightbox();
         }
     });
+
+        // Search and filter meals
+    const mealSearch = document.getElementById("mealSearch");
+    const mealType = document.getElementById("mealType");
+    const mealCards = document.querySelectorAll(".meal-card");
+    const mealSearchFeedback =
+        document.getElementById("mealSearchFeedback");
+
+    if (mealSearch && mealType && mealSearchFeedback) {
+
+        function filterMeals() {
+            const searchText = mealSearch.value.trim().toLowerCase();
+            const selectedType = mealType.value;
+            let visibleMeals = 0;
+
+            mealCards.forEach(function (card) {
+                const cardText = card.textContent.toLowerCase();
+                const cardCategory = card.dataset.category;
+
+                const matchesSearch = cardText.includes(searchText);
+                const matchesType =
+                    selectedType === "all" ||
+                    cardCategory === selectedType;
+
+                if (matchesSearch && matchesType) {
+                    card.style.display = "";
+                    visibleMeals++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            if (visibleMeals === 0) {
+                mealSearchFeedback.textContent =
+                    "No meals found. Try another search or filter.";
+            } else {
+                mealSearchFeedback.textContent =
+                    visibleMeals +
+                    (visibleMeals === 1 ? " meal found." : " meals found.");
+            }
+        }
+
+        mealSearch.addEventListener("input", filterMeals);
+        mealType.addEventListener("change", filterMeals);
+
+        filterMeals();
+    }
 });
