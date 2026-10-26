@@ -59,8 +59,12 @@ Added a DOMContentLoaded event listener to ensure that the HTML document is load
 
 Updated the activation navigation syling by increasing the gold bottom border of the active navigation link to improve visibility.
 
-Contact form validation
+Contact form validation.
 Added the JavaScript validation to the Contact Us form to check required fields, email formats, and contact number digits. Added feedback messages to guide users when completing the form and prevent submission when the required fields or contact details are invalid.
 
-Interactive image gallery
+Interactive image gallery.
 Added the JavaScript image gallery to allow users to click images within the main content of the Home, Why My Balanced Plate, Featured Meals and Meal Preparation Guidance pages to view enlarged versions. To improve usability a close button, background-click functionality and an escape-key support were added. 
+
+
+Added page entrance animations. 
+Added the CSS fade-in and upward movement animations to page headings and content to make the website more visually appealing. Applied staggered animation delays to the meal cards to create a smoother appearance as they load. To accommodate users who prefer fewer animations for accessibility, a reduced-motion media query was also included. 
