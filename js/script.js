@@ -511,4 +511,35 @@ if (recipeModal && recipeTitle && recipeDetails && closeRecipe) {
         }
     });
 }
+    // Animate home page feature cards when they enter the screen
+    const featureCards = document.querySelectorAll(".feature-card");
+
+    if ("IntersectionObserver" in window) {
+        featureCards.forEach(function (card, index) {
+            card.classList.add("reveal");
+
+            // Stagger the animation for each card
+            card.style.transitionDelay = (index * 150) + "ms";
+        });
+
+        const cardObserver = new IntersectionObserver(
+            function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.2
+            }
+        );
+
+        featureCards.forEach(function (card) {
+            cardObserver.observe(card);
+        });
+    }
+
+
 });
