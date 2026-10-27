@@ -1852,3 +1852,13 @@ main > * {
         transition: none;
     }
 }
+
+/* Explore More buttons inside feature cards */
+.feature-card .cta-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
