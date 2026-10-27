@@ -68,3 +68,6 @@ Added the JavaScript image gallery to allow users to click images within the mai
 
 Added page entrance animations. 
 Added the CSS fade-in and upward movement animations to page headings and content to make the website more visually appealing. Applied staggered animation delays to the meal cards to create a smoother appearance as they load. To accommodate users who prefer fewer animations for accessibility, a reduced-motion media query was also included. 
+
+Featured meals page enhancement
+Improved the featured meals page by adding interactive recipe popups that display ingredients and preparation instructions for each meal, with options to close the popups using a close button, clicking outside the popup, or pressing an Escape key. Improved the “Click to View Recipe” buttons with a dark green background, white text, rounded corners, as well as hover effects. Improved the meal search field and meal type dropdown, improved borders, rounded corners, and green focus effects to create a more consistent and user-friendly design.
