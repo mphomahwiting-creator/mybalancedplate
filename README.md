@@ -71,3 +71,6 @@ Added the CSS fade-in and upward movement animations to page headings and conten
 
 Featured meals page enhancement
 Improved the featured meals page by adding interactive recipe popups that display ingredients and preparation instructions for each meal, with options to close the popups using a close button, clicking outside the popup, or pressing an Escape key. Improved the “Click to View Recipe” buttons with a dark green background, white text, rounded corners, as well as hover effects. Improved the meal search field and meal type dropdown, improved borders, rounded corners, and green focus effects to create a more consistent and user-friendly design.
+
+Improved the home page 
+Improved the home page by adding the JavaScript scroll animations to the feature cards, to allow them to fade in and move upwards as users scroll down the page. To create a smoother visual experience, a staggered animation effect was implement and included a reduced-motion setting to improve accessibility . Added Explore More buttons to the Healthy Food, Portion Awareness, and Meal Preparation cards, linking users to the relevant pages. These improvements improves the website's interactivity, navigation, accessibility, and the overall user experience.
