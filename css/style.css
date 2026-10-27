@@ -1829,3 +1829,26 @@ main > * {
     font-weight: 500;
     margin-bottom: 0;
 }
+
+/* Home page feature card animations */
+.feature-card.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease,
+                transform 0.6s ease;
+}
+
+.feature-card.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .feature-card.reveal,
+    .feature-card.reveal.visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
