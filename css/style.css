@@ -1746,3 +1746,86 @@ main > * {
     margin-bottom: 8px;
     line-height: 1.6;
 }
+
+/* View Recipe button */
+.view-recipe-btn {
+    background-color: #285943;
+    color: #ffffff;
+    border: 2px solid #285943;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.view-recipe-btn:hover {
+    background-color: #1d4232;
+    border-color: #1d4232;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyboard focus */
+.view-recipe-btn:focus-visible {
+    outline: 3px solid #d6a928;
+    outline-offset: 3px;
+}
+
+/* Button press effect */
+.view-recipe-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Meal search and filter styling */
+.meal-search {
+    background-color: #f4f8f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #d5e4da;
+}
+
+/* Search and filter labels */
+.meal-search label {
+    display: block;
+    color: #285943;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Search box and meal type dropdown */
+.meal-search input[type="search"],
+.meal-search select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 2px solid #c5d8cc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Highlight when selected */
+.meal-search input[type="search"]:focus,
+.meal-search select:focus {
+    outline: none;
+    border-color: #285943;
+    box-shadow: 0 0 0 3px rgba(40, 89, 67, 0.15);
+}
+
+/* Search feedback message */
+#mealSearchFeedback {
+    color: #285943;
+    font-weight: 500;
+    margin-bottom: 0;
+}
