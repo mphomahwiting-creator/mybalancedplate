@@ -1732,3 +1732,17 @@ main > * {
         animation: none;
     }
 }
+
+.recipe-modal-content h3 {
+    color: #285943;
+    margin-top: 24px;
+}
+
+.recipe-modal-content h4 {
+    margin-bottom: 8px;
+}
+
+.recipe-modal-content li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
