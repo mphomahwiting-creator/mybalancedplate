@@ -10,6 +10,70 @@ document.addEventListener("DOMContentLoaded", function () {
         if (linkPage === currentPage) {
             link.classList.add("active");
         }
+        // Interactive balanced plate food groups
+    const foodGroupButtons =
+        document.querySelectorAll(".food-group-btn");
+
+    const foodGroupInfo =
+        document.getElementById("foodGroupInfo");
+
+    const foodGroupDetails = {
+        vegetables: {
+            title: "Vegetables and Fruit",
+            description:
+                "Vegetables and fruit provide vitamins, minerals and fibre. Include a variety of colourful options in your meals."
+        },
+        protein: {
+            title: "Protein",
+            description:
+                "Protein foods such as eggs, fish, chicken, beans and lentils help build and repair body tissues."
+        },
+        carbs: {
+            title: "Whole Grains and Starchy Foods",
+            description:
+                "Foods such as wholegrain bread, rice, oats and potatoes provide energy for daily activities. Choose wholegrain options regularly where possible."
+        },
+        fats: {
+            title: "Healthy Fats",
+            description:
+                "Foods such as avocado, nuts, seeds and olive oil provide fats that support normal body functions. Enjoy them in suitable portions."
+        }
+    };
+
+    if (foodGroupInfo && foodGroupButtons.length > 0) {
+        foodGroupButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                const selectedFood = foodGroupDetails[
+                    button.dataset.food
+                ];
+
+                if (!selectedFood) return;
+
+                foodGroupInfo.replaceChildren();
+
+                const heading = document.createElement("h3");
+                heading.textContent = selectedFood.title;
+
+                const paragraph = document.createElement("p");
+                paragraph.textContent = selectedFood.description;
+
+                foodGroupInfo.append(heading, paragraph);
+
+                foodGroupButtons.forEach(function (item) {
+                    const isSelected = item === button;
+
+                    item.classList.toggle("active", isSelected);
+                    item.setAttribute(
+                        "aria-pressed",
+                        String(isSelected)
+                    );
+                });
+            });
+        });
+
+        // Set the initial selected button
+        foodGroupButtons[0].setAttribute("aria-pressed", "true");
+    }
     });
 
     // Validate the contact form

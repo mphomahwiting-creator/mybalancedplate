@@ -1862,3 +1862,78 @@ main > * {
     text-align: center;
     text-decoration: none;
 }
+
+/* Interactive balanced plate section */
+.balanced-plate-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f8f5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.balanced-plate-section h2 {
+    color: #285943;
+}
+
+.balanced-plate-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.food-group-btn {
+    background-color: #ffffff;
+    color: #285943;
+    border: 2px solid #285943;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+.food-group-btn:hover,
+.food-group-btn.active {
+    background-color: #285943;
+    color: #ffffff;
+}
+
+.food-group-btn:focus-visible {
+    outline: 3px solid #d6a928;
+    outline-offset: 3px;
+}
+
+.food-group-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #d6a928;
+    text-align: left;
+}
+
+.food-group-info h3 {
+    color: #285943;
+    margin-top: 0;
+}
+
+.food-group-info p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .balanced-plate-section {
+        padding: 20px;
+        margin: 25px 12px;
+    }
+
+    .food-group-btn {
+        width: 100%;
+    }
+}
