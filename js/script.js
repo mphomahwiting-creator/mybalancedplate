@@ -74,6 +74,58 @@ document.addEventListener("DOMContentLoaded", function () {
         // Set the initial selected button
         foodGroupButtons[0].setAttribute("aria-pressed", "true");
     }
+
+        // Portion awareness interaction
+    const portionButtons = document.querySelectorAll(".portion-btn");
+    const portionTip = document.getElementById("portionTip");
+
+    const portionTips = {
+        vegetables: {
+            title: "Start with vegetables",
+            text: "Include a variety of vegetables in your meals to add colour, fibre, vitamins and minerals."
+        },
+        protein: {
+            title: "Include a protein source",
+            text: "Foods such as eggs, fish, chicken, beans and lentils provide protein. Vary your choices throughout the week."
+        },
+        carbs: {
+            title: "Choose starchy foods wisely",
+            text: "Rice, potatoes, oats and bread provide energy. Consider wholegrain options regularly and adjust portions to your needs."
+        },
+        plate: {
+            title: "Build a balanced plate",
+            text: "Aim to include vegetables or fruit, a protein source and a starchy food. Suitable portions vary depending on your needs and activity levels."
+        }
+    };
+
+    if (portionTip && portionButtons.length > 0) {
+        portionButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                const tip = portionTips[button.dataset.portion];
+
+                if (!tip) return;
+
+                const heading = document.createElement("h3");
+                heading.textContent = tip.title;
+
+                const paragraph = document.createElement("p");
+                paragraph.textContent = tip.text;
+
+                portionTip.replaceChildren(heading, paragraph);
+
+                portionButtons.forEach(function (item) {
+                    const selected = item === button;
+
+                    item.classList.toggle("active", selected);
+                    item.setAttribute("aria-pressed", String(selected));
+                });
+            });
+        });
+
+        // Set the initial selected button
+        portionButtons[0].classList.add("active");
+        portionButtons[0].setAttribute("aria-pressed", "true");
+    }
     });
 
     // Validate the contact form

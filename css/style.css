@@ -1937,3 +1937,83 @@ main > * {
         width: 100%;
     }
 }
+
+/* Portion awareness interaction */
+.portion-awareness {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f8f5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.portion-awareness h2 {
+    color: #285943;
+}
+
+.portion-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.portion-btn {
+    padding: 12px 18px;
+    background-color: #ffffff;
+    color: #285943;
+    border: 2px solid #285943;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portion-btn:hover,
+.portion-btn.active {
+    background-color: #285943;
+    color: #ffffff;
+}
+
+.portion-btn:focus-visible {
+    outline: 3px solid #d6a928;
+    outline-offset: 3px;
+}
+
+.portion-tip {
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #d6a928;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.portion-tip h3 {
+    color: #285943;
+    margin-top: 0;
+}
+
+.portion-tip p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .portion-awareness {
+        margin: 25px 12px;
+        padding: 20px;
+    }
+
+    .portion-btn {
+        width: 100%;
+    }
+}
+.offer-heading {
+    text-align: center;
+    color: #285943;
+    margin: 40px auto 25px;
+    font-size: 2rem;
+}
