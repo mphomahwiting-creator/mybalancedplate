@@ -656,6 +656,32 @@ if (recipeModal && recipeTitle && recipeDetails && closeRecipe) {
             cardObserver.observe(card);
         });
     }
+// Animate sections as they enter the screen
+const revealSections = document.querySelectorAll(".scroll-reveal");
 
+if ("IntersectionObserver" in window) {
+    const sectionObserver = new IntersectionObserver(
+        function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealSections.forEach(function (section) {
+        sectionObserver.observe(section);
+    });
+} else {
+    // Show sections normally if IntersectionObserver is unsupported
+    revealSections.forEach(function (section) {
+        section.classList.add("visible");
+    });
+}
 
 });
