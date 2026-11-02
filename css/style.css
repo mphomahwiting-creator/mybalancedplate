@@ -1429,10 +1429,11 @@ line-height: 1.8;
 /* Contact information + form */
 
 .contact-container {
-display: grid;
-grid-template-columns: 1fr 1.5fr;
-gap: 35px;
-align-items: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 /* Contact information card */
@@ -2301,4 +2302,26 @@ main > * {
     .tip-btn {
         width: 100%;
     }
+}
+
+/* About Us - Read More Button */
+
+#storyToggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #285943;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#storyToggle:hover {
+    background-color: #1d4232;
+}
+
+#storyToggle:focus-visible {
+    outline: 3px solid #d6a928;
+    outline-offset: 3px;
 }

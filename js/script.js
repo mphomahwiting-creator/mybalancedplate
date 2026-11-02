@@ -957,4 +957,26 @@ if (preparationTipInfo && tipButtons.length > 0) {
 
     tipButtons[0].setAttribute("aria-pressed", "true");
 }
+
+// About Us - Read More and Read Less
+
+const storyToggle = document.getElementById("storyToggle");
+const aboutStoryExtra = document.getElementById("aboutStoryExtra");
+
+if (storyToggle && aboutStoryExtra) {
+
+    storyToggle.addEventListener("click", function () {
+
+        const isExpanded = storyToggle.getAttribute("aria-expanded") === "true";
+
+        aboutStoryExtra.hidden = isExpanded;
+
+        storyToggle.textContent = isExpanded ? "Read More" : "Read Less";
+
+        storyToggle.setAttribute("aria-expanded", String(!isExpanded));
+
+    });
+
+}
+
 });
