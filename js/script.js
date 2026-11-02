@@ -760,4 +760,140 @@ if (knowledgeQuizForm && quizResult && retryQuizButton) {
     });
 }
 
+// Interactive Meal Preparation Planner
+
+const mealPlannerForm = document.getElementById("mealPlannerForm");
+const mealTaskList = document.getElementById("mealTaskList");
+const mealPlannerMessage = document.getElementById("mealPlannerMessage");
+
+if (mealPlannerForm && mealTaskList && mealPlannerMessage) {
+
+    // Load saved tasks from localStorage
+    let mealTasks = JSON.parse(localStorage.getItem("mealTasks")) || [];
+
+    // Display scheduled tasks
+    function displayMealTasks() {
+
+        mealTaskList.replaceChildren();
+
+        if (mealTasks.length === 0) {
+            mealTaskList.textContent = "No tasks scheduled yet. Add your first task above.";
+            return;
+        }
+
+        mealTasks.forEach(function (task, index) {
+
+            const taskCard = document.createElement("div");
+            taskCard.className = "meal-task-item";
+
+            if (task.completed) {
+                taskCard.classList.add("completed");
+            }
+
+            const heading = document.createElement("h4");
+            heading.textContent = task.name;
+
+            const schedule = document.createElement("p");
+            schedule.textContent = "Scheduled: " + task.date + " at " + task.time;
+
+            const status = document.createElement("p");
+            status.textContent = task.completed ? "Completed" : "Pending";
+
+            const actions = document.createElement("div");
+            actions.className = "task-actions";
+
+            const completeButton = document.createElement("button");
+            completeButton.type = "button";
+            completeButton.textContent = task.completed ? "Undo" : "Mark Complete";
+
+            completeButton.addEventListener("click", function () {
+                mealTasks[index].completed = !mealTasks[index].completed;
+                saveMealTasks();
+                displayMealTasks();
+            });
+
+            const deleteButton = document.createElement("button");
+            deleteButton.type = "button";
+            deleteButton.className = "delete-task";
+            deleteButton.textContent = "Delete";
+
+            deleteButton.addEventListener("click", function () {
+                mealTasks.splice(index, 1);
+                saveMealTasks();
+                displayMealTasks();
+            });
+
+            actions.append(completeButton, deleteButton);
+            taskCard.append(heading, schedule, status, actions);
+            mealTaskList.appendChild(taskCard);
+        });
+    }
+
+    // Save tasks in the browser
+    function saveMealTasks() {
+        localStorage.setItem("mealTasks", JSON.stringify(mealTasks));
+    }
+
+    // Add a new task
+    mealPlannerForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const taskName = document.getElementById("mealTask").value.trim();
+        const taskDate = document.getElementById("mealDate").value;
+        const taskTime = document.getElementById("mealTime").value;
+
+        if (!taskName || !taskDate || !taskTime) {
+            mealPlannerMessage.textContent = "Please complete all fields.";
+            return;
+        }
+
+        const scheduledDate = new Date(taskDate + "T" + taskTime);
+
+        if (scheduledDate.getTime() < Date.now()) {
+            mealPlannerMessage.textContent = "Please select a future date and time.";
+            return;
+        }
+
+        mealTasks.push({
+            name: taskName,
+            date: taskDate,
+            time: taskTime,
+            completed: false
+        });
+
+        saveMealTasks();
+        displayMealTasks();
+
+        mealPlannerForm.reset();
+        mealPlannerMessage.textContent = "Your meal preparation task has been added!";
+    });
+
+    // Check for upcoming reminders
+    function checkMealReminders() {
+
+        const now = Date.now();
+
+        mealTasks.forEach(function (task) {
+
+            const reminderTime = new Date(task.date + "T" + task.time).getTime();
+
+            if (!task.completed && !task.reminded && reminderTime <= now) {
+
+                mealPlannerMessage.textContent = "Reminder: Time to " + task.name + "!";
+
+                task.reminded = true;
+                saveMealTasks();
+            }
+        });
+    }
+
+    displayMealTasks();
+
+    checkMealReminders();
+
+    // Check for reminders every 30 seconds
+    setInterval(checkMealReminders, 30000);
+}
+
 });

@@ -118,6 +118,38 @@
 
     </section>
 
+<!-- Interactive Meal Preparation Planner -->
+<section class="meal-planner">
+
+    <h2>Plan Your Meal Preparation</h2>
+
+    <p>Add your meal preparation tasks and set reminders to help you stay organised.</p>
+
+    <form id="mealPlannerForm">
+
+        <label for="mealTask">Preparation Task</label>
+        <input type="text" id="mealTask"
+               placeholder="e.g. Prepare vegetables" required>
+
+        <label for="mealDate">Date</label>
+        <input type="date" id="mealDate" required>
+
+        <label for="mealTime">Time</label>
+        <input type="time" id="mealTime" required>
+
+        <button type="submit">Add Task</button>
+
+    </form>
+
+    <h3>My Scheduled Tasks</h3>
+
+    <div id="mealTaskList">
+        <p>No tasks scheduled yet. Add your first task above.</p>
+    </div>
+
+    <p id="mealPlannerMessage" aria-live="polite"></p>
+
+</section>
 
     <section class="future-services">
 

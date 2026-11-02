@@ -2139,3 +2139,92 @@ main > * {
         margin: 8px 0;
     }
 }
+
+/* Interactive Meal Preparation Planner */
+
+.meal-planner {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f8f5;
+    border-radius: 12px;
+}
+
+.meal-planner h2,
+.meal-planner > p {
+    text-align: center;
+}
+
+.meal-planner h2,
+.meal-planner h3 {
+    color: #285943;
+}
+
+#mealPlannerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+#mealPlannerForm input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#mealPlannerForm button,
+.task-actions button {
+    padding: 11px 18px;
+    background-color: #285943;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#mealTaskList {
+    margin-top: 20px;
+}
+
+.meal-task-item {
+    background-color: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #d6a928;
+    border-radius: 8px;
+}
+
+.meal-task-item.completed {
+    opacity: 0.7;
+    border-left-color: #285943;
+}
+
+.meal-task-item.completed h4 {
+    text-decoration: line-through;
+}
+
+.task-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.task-actions .delete-task {
+    background-color: #a83232;
+}
+
+#mealPlannerMessage {
+    color: #285943;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .meal-planner {
+        margin: 25px 12px;
+        padding: 20px;
+    }
+}
