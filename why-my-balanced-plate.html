@@ -177,6 +177,7 @@
         </div>
     </section>
 
+
     <section class="content-section scroll-reveal">
         <div class="content-image">
             <img src="images/journable-application-hero-image.jpeg"
@@ -218,6 +219,76 @@
 
 
 </main>
+
+            <!-- Interactive Knowledge Quiz -->
+<section class="knowledge-quiz">
+    <h2>Test Your Nutrition Knowledge</h2>
+    <p>Answer the questions below to see how much you have learned about balanced meals and healthy eating.</p>
+
+    <form id="knowledgeQuizForm">
+
+        <div class="quiz-question" data-answer="b">
+            <h3>1. Which food group should make up a large part of a balanced plate?</h3>
+
+            <label><input type="radio" name="q1" value="a"> Healthy fats</label>
+            <label><input type="radio" name="q1" value="b"> Vegetables and fruit</label>
+            <label><input type="radio" name="q1" value="c"> Sugary foods</label>
+            <label><input type="radio" name="q1" value="d"> Processed snacks</label>
+
+            <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-answer="c">
+            <h3>2. Which of these is a good source of protein?</h3>
+
+            <label><input type="radio" name="q2" value="a"> White sugar</label>
+            <label><input type="radio" name="q2" value="b"> Cooking oil</label>
+            <label><input type="radio" name="q2" value="c"> Eggs</label>
+            <label><input type="radio" name="q2" value="d"> Soft drinks</label>
+
+            <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-answer="a">
+            <h3>3. Which option is a whole grain food?</h3>
+
+            <label><input type="radio" name="q3" value="a"> Oats</label>
+            <label><input type="radio" name="q3" value="b"> Sweets</label>
+            <label><input type="radio" name="q3" value="c"> Butter</label>
+            <label><input type="radio" name="q3" value="d"> Fizzy drinks</label>
+
+            <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-answer="d">
+            <h3>4. Which food contains healthy fats?</h3>
+
+            <label><input type="radio" name="q4" value="a"> White bread</label>
+            <label><input type="radio" name="q4" value="b"> Sweets</label>
+            <label><input type="radio" name="q4" value="c"> Soft drinks</label>
+            <label><input type="radio" name="q4" value="d"> Avocado</label>
+
+            <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-answer="b">
+            <h3>5. Why is portion awareness important?</h3>
+
+            <label><input type="radio" name="q5" value="a"> It means avoiding all carbohydrates</label>
+            <label><input type="radio" name="q5" value="b"> It helps you choose suitable amounts of food</label>
+            <label><input type="radio" name="q5" value="c"> It means eating only once a day</label>
+            <label><input type="radio" name="q5" value="d"> It means avoiding vegetables</label>
+
+            <p class="quiz-feedback"></p>
+        </div>
+
+        <button type="submit" class="quiz-submit-btn">Submit Answers</button>
+        <button type="button" id="retryQuiz" class="quiz-retry-btn">Try Again</button>
+
+    </form>
+
+    <div id="quizResult" class="quiz-result" aria-live="polite"></div>
+</section>
 
 <footer class="site-footer">
     <p>&copy; 2026 My Balanced Plate. All rights reserved.</p>

@@ -684,4 +684,80 @@ if ("IntersectionObserver" in window) {
     });
 }
 
+// Interactive Knowledge Quiz
+const knowledgeQuizForm = document.getElementById("knowledgeQuizForm");
+const quizResult = document.getElementById("quizResult");
+const retryQuizButton = document.getElementById("retryQuiz");
+
+if (knowledgeQuizForm && quizResult && retryQuizButton) {
+
+    knowledgeQuizForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const questions = knowledgeQuizForm.querySelectorAll(".quiz-question");
+        let score = 0;
+        let allAnswered = true;
+
+        // Check whether every question has been answered
+        questions.forEach(function (question) {
+            const selectedAnswer = question.querySelector("input:checked");
+
+            if (!selectedAnswer) {
+                allAnswered = false;
+            }
+        });
+
+        if (!allAnswered) {
+            quizResult.textContent = "Please answer all five questions before submitting.";
+            return;
+        }
+
+        // Check the answers
+        questions.forEach(function (question) {
+            const correctAnswer = question.dataset.answer;
+            const selectedAnswer = question.querySelector("input:checked");
+            const feedback = question.querySelector(".quiz-feedback");
+
+            if (selectedAnswer.value === correctAnswer) {
+                score++;
+                feedback.textContent = "Correct! Well done.";
+                feedback.style.color = "#285943";
+            } else {
+                feedback.textContent = "Incorrect. The correct answer is: " +
+                    question.querySelector('input[value="' + correctAnswer + '"]').parentElement.textContent.trim();
+                feedback.style.color = "#b3261e";
+            }
+        });
+
+        // Display the final score
+        quizResult.textContent = "You scored " + score + " out of " + questions.length + "!";
+
+        // Disable answers after submission
+        knowledgeQuizForm.querySelectorAll("input").forEach(function (input) {
+            input.disabled = true;
+        });
+
+        knowledgeQuizForm.querySelector(".quiz-submit-btn").disabled = true;
+        retryQuizButton.style.display = "inline-block";
+    });
+
+    // Reset the quiz
+    retryQuizButton.addEventListener("click", function () {
+        knowledgeQuizForm.reset();
+
+        knowledgeQuizForm.querySelectorAll("input").forEach(function (input) {
+            input.disabled = false;
+        });
+
+        knowledgeQuizForm.querySelectorAll(".quiz-feedback").forEach(function (feedback) {
+            feedback.textContent = "";
+        });
+
+        knowledgeQuizForm.querySelector(".quiz-submit-btn").disabled = false;
+
+        quizResult.textContent = "";
+        retryQuizButton.style.display = "none";
+    });
+}
+
 });
