@@ -178,7 +178,7 @@ if (
 
             // Display the success message
             formFeedback.textContent =
-                "Validation successful! Your form is ready to submit.";
+                "Your request has been sent successfully. Thank you for contacting My Balanced Plate!";
         });
     }
 
