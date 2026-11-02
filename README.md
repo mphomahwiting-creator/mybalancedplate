@@ -74,3 +74,6 @@ Improved the featured meals page by adding interactive recipe popups that displa
 
 Improved the home page 
 Improved the home page by adding the JavaScript scroll animations to the feature cards, to allow them to fade in and move upwards as users scroll down the page. To create a smoother visual experience, a staggered animation effect was implement and included a reduced-motion setting to improve accessibility . Added Explore More buttons to the Healthy Food, Portion Awareness, and Meal Preparation cards, linking users to the relevant pages. These improvements improves the website's interactivity, navigation, accessibility, and the overall user experience.
+
+Why my balanced plate improvements 
+Updated the page layout by separating the "What We Offer" heading from the individual offerings. Added an interactive Balanced Plate and Portion Awareness features using JavaScript and implemented the scroll reveal animations using the Intersection Observer API. To make the page more interactive, added a five-question interactive knowledge quiz with answer feedback, score calculation and a retry option. Updated the CSS styling to improve consistency, responsiveness and user experience.
