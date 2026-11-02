@@ -896,4 +896,65 @@ if (mealPlannerForm && mealTaskList && mealPlannerMessage) {
     setInterval(checkMealReminders, 30000);
 }
 
+// Interactive Meal Preparation Tips
+
+const tipButtons = document.querySelectorAll(".tip-btn");
+const preparationTipInfo = document.getElementById("preparationTipInfo");
+
+const preparationTips = {
+
+    planning: {
+        title: "Meal Planning",
+        text: "Plan your meals ahead of time and create a shopping list to help you stay organised and avoid unnecessary purchases."
+    },
+
+    ingredients: {
+        title: "Preparing Ingredients",
+        text: "Wash and prepare your vegetables, measure ingredients and organise everything before you start cooking. This makes meal preparation easier."
+    },
+
+    portions: {
+        title: "Portion Awareness",
+        text: "Include vegetables, a protein source and starchy foods in your meals. Adjust portions according to your individual needs."
+    },
+
+    storage: {
+        title: "Food Storage",
+        text: "Store prepared meals in clean, sealed containers and refrigerate perishable foods promptly to maintain food safety and quality."
+    }
+};
+
+if (preparationTipInfo && tipButtons.length > 0) {
+
+    tipButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const selectedTip = preparationTips[button.dataset.tip];
+
+            if (!selectedTip) return;
+
+            const heading = document.createElement("h3");
+            heading.textContent = selectedTip.title;
+
+            const paragraph = document.createElement("p");
+            paragraph.textContent = selectedTip.text;
+
+            preparationTipInfo.replaceChildren(heading, paragraph);
+
+            tipButtons.forEach(function (item) {
+
+                const isSelected = item === button;
+
+                item.classList.toggle("active", isSelected);
+                item.setAttribute("aria-pressed", String(isSelected));
+
+            });
+
+        });
+
+    });
+
+    tipButtons[0].setAttribute("aria-pressed", "true");
+}
 });

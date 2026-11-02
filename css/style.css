@@ -2228,3 +2228,72 @@ main > * {
         padding: 20px;
     }
 }
+
+/* Interactive Meal Preparation Tips */
+
+.preparation-tips {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f8f5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.preparation-tips h2,
+.preparation-tip-info h3 {
+    color: #285943;
+}
+
+.tip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.tip-btn {
+    padding: 12px 18px;
+    background-color: #fff;
+    color: #285943;
+    border: 2px solid #285943;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tip-btn:hover,
+.tip-btn.active {
+    background-color: #285943;
+    color: #fff;
+}
+
+.tip-btn:focus-visible {
+    outline: 3px solid #d6a928;
+    outline-offset: 3px;
+}
+
+.preparation-tip-info {
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #d6a928;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.preparation-tip-info h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .preparation-tips {
+        margin: 25px 12px;
+        padding: 20px;
+    }
+
+    .tip-btn {
+        width: 100%;
+    }
+}
