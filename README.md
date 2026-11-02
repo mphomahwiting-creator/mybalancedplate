@@ -77,3 +77,6 @@ Improved the home page by adding the JavaScript scroll animations to the feature
 
 Why my balanced plate improvements 
 Updated the page layout by separating the "What We Offer" heading from the individual offerings. Added an interactive Balanced Plate and Portion Awareness features using JavaScript and implemented the scroll reveal animations using the Intersection Observer API. To make the page more interactive, added a five-question interactive knowledge quiz with answer feedback, score calculation and a retry option. Updated the CSS styling to improve consistency, responsiveness and user experience.
+
+Meal preparation guidance improvements 
+Improved the page layout with a responsive two-column card design and added an interactive Meal Preparation Planner with task scheduling, localStorage and on-page reminders. Added interactive meal preparation tips covering planning, ingredients, portions and food storage. Updated the CSS for improved styling and responsiveness.
