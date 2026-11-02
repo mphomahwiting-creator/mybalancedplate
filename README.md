@@ -80,3 +80,6 @@ Updated the page layout by separating the "What We Offer" heading from the indiv
 
 Meal preparation guidance improvements 
 Improved the page layout with a responsive two-column card design and added an interactive Meal Preparation Planner with task scheduling, localStorage and on-page reminders. Added interactive meal preparation tips covering planning, ingredients, portions and food storage. Updated the CSS for improved styling and responsiveness.
+
+Updated the project proposal
+Updated the project proposal under the low fidelity frames section, by ensurung that the each frameware is structured similar to how they are structured on the website. 
